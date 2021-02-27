@@ -1,0 +1,28 @@
+Cadeia / Token / Escopo / Categoria / Utilizada / Tipo / Valor / Parametros
+
+
+
+
+
+
+Cadeia: Ex: "if"
+
+Token: Ex: "IDENTIFICADOR"
+
+Escopo: Númérico
+
+Categoria: 1-Variável ; 2-Procedimento ; 
+
+Utilizada: 1 = Sim ; 0 = Não ;
+
+Tipo: "real", "int", "boolean" 
+
+Valor: Numérico para variáveis ; 
+
+
+
+Obs:
+
+	- Só pode-se realizar operações com variáveis de mesmo tipo (INTxINT, REALxREAL, BOOLEANxBOOLEAN, INTxNUM_NAT...)
+	- Escopos serão incrementados apenas para procedures
+	- Se uma variável do tipo Boolean recebe um valor numérico (Ex: Sendo 'a' e 'b' numéricas, a+b, a+2, a, b, 2, etc...), não será acusado erro, pois este número será tido como TRUE, a menos que o valor inserido na variável seja '0 ou negativo', neste caso, será tido como FALSE.

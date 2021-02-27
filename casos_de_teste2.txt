@@ -1,0 +1,181 @@
+1---------------------- COM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+real d;
+begin
+d:=4.4;
+a:=d+2;
+b:=2<2
+end.
+
+
+2------------------------ COM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+real d;
+begin
+d:=4.4;
+a:=b+2;
+b:=2+2
+end.
+
+
+3------------------------- SEM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+real d;
+begin
+d:=4.4;
+b:=2+2;
+a:=b+2
+end.
+
+
+4------------------------- COM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+real d;
+boolean a;
+begin
+d:=4.4;
+b:=2+2;
+a:=b+2;
+e:=true
+end.
+
+5------------------------- SEM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+real d;
+boolean e;
+begin
+d:=4.4;
+b:=2+2;
+a:=b+2;
+e:=2>2
+end.
+
+6-------------------------- SEM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+real d;
+boolean e;
+begin
+d:=4.4;
+b:=2+2;
+a:=b+2;
+e:=2>2;
+if(a>4) then
+    b:=5
+end.
+
+
+7---------------------------- COM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+real d;
+boolean e;
+begin
+d:=4.4;
+b:=2+2;
+e:=2>2;
+if(a>4) then
+    f:=5
+end.
+
+
+8-------------------------- COM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+procedure proc(var a,a2 : int; a3 : real);
+int d, e, f;
+begin
+  a:=1;
+d:=b+a2
+end;
+begin
+a:=1+2;
+d:=4
+end.
+
+
+9---------------------------- SEM ERROS SEMANTICOS
+
+program correto;
+int a, b, c;
+procedure proc(var a1,a2 : int; a3 : real);
+int d, e, f;
+begin
+  a:=1;
+d:=a
+end;
+begin
+a:=1+2
+end.
+
+10---------------------------- SEM ERROS SEMANTICOS
+
+
+program correto;
+int a, b, c;
+real g;
+procedure proc(var a1,a2 : int; a3 : real);
+int d, e, f;
+begin
+  a:=1;
+d:=a
+end;
+begin
+a:=1+2;
+b:=4;
+g:=4.2;
+proc(a,b,g)
+end.
+
+11---------------------------- COM ERROS SEMANTICOS
+
+
+program correto;
+int a, b, c;
+real g;
+procedure proc(var a1,a2 : int; a3 : real);
+int d, e, f;
+begin
+  a:=1;
+d:=a
+end;
+begin
+a:=1+2;
+b:=4;
+g:=4.2;
+c:=3;
+proc(a,b,c)
+end.
+
+12----------------------------- COM ERROS SEMANTICOS
+
+
+program correto;
+int a, b, c;
+real g;
+procedure proc(var a1,a2 : int; a3 : real);
+int d, e, f;
+begin
+  a:=1;
+d:=a
+end;
+begin
+a:=1+2;
+b:=4;
+proc(a,b,g)
+end.
+
+13----------------------------------

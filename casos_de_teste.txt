@@ -1,0 +1,137 @@
+OBS: Os códigos devem ser copiados (ou digitados) até exatamente o ponto final. Se houver algum espaço ou quebra de linha após o ponto final, ocorrerá um erro.
+
+
+Casos de Testes:
+
+1--------------------------------- Correto
+
+program correto;
+begin
+	a:=1;
+	if (a<1) then
+		a:=12
+end.
+
+
+2--------------------------------- Correto
+
+program correto;
+begin
+	a:=1;
+        a:=b+c;
+	if (a<1) then
+		a:=12
+end.
+
+
+3--------------------------------- Correto
+
+program correto;
+int a, b, c;
+procedure proc(var a1 : int);
+int a, b, c;
+begin
+  a:=1 
+end;
+begin
+a:=1+2;
+b:=4
+end.
+
+4---------------------------------- Correto
+
+
+program correto;
+begin
+  a:=2;
+
+  if (d) then
+  begin
+    a:=20;
+    b:=10*c;
+    c:=a div b
+  end;
+
+  a:=1
+end.
+
+
+5---------------------------------- Correto
+
+program correto;
+int a, b, c;
+
+{Comentario correto}
+
+procedure proc(var a1 : int);
+int a, b, c;
+
+begin
+  a:=1;
+  if (a<1) then
+    a:=12
+end;
+
+begin
+
+  a:=b+c;
+  d:=true;
+
+  //comentario de linha
+  if (d) then
+  begin
+    a:=20;
+    b:=10*c;
+    c:=a div b
+  end;
+
+  while (a>1) do
+  begin
+    if (b>10) then
+      b:=2
+
+  end
+end.
+
+
+6------------------------------------
+
+program correto;
+int a, b, c;
+
+{Comentario correto}
+
+procedure proc(var a1 : int);
+int a, b, c;
+
+begin
+  a:=1;
+  if (a<1) then
+    a:=12
+end;
+
+begin
+
+  a:=b+c;
+  d:=true;
+
+  //comentario de linha
+  if (d) then
+  begin
+    a:=20;
+    b:=10*c;
+    c:=a div b
+  end;
+
+  while (a>1) do
+  begin
+    if (b>10) then
+      b:=2
+    else
+    begin
+      c:=true;   
+      b:=a+7;
+      d:=1*5+4
+    end
+  end
+end.

@@ -1,0 +1,34 @@
+program correto;
+int a, b, c;
+
+{Comentario correto}
+
+procedure proc(var a1 : a);
+int a, b, c;
+
+begin
+  a:=1;
+  if (a<1) then
+    a:=12
+end;
+
+begin
+
+  a:=b+c;
+  d:=true;
+
+  //comentario de linha
+  if (d) then
+  begin
+    a:=20;
+    b:=10*c;
+    c:=a div b
+  end;
+
+  while (a>1) do
+  begin
+    if (b>10) then
+      b:=2
+
+  end
+end.
